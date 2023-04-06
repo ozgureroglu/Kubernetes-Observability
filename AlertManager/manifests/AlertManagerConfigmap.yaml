@@ -31,5 +31,6 @@ data:
         require_tls: false
     - name: slack_demo
       slack_configs:
+      # Asagidaki gecerli bir hook degildir
       - api_url: https://hooks.slack.com/services/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
         channel: 'grafana_alertmanager'

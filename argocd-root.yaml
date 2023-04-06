@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: rke1-observability-tools
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  destination:
+    namespace: observability-ns
+    name: in-cluster
+  project: default
+  source:
+    path: .
+    repoURL: git@github.com:ozgureroglu/Kubernetes-Observability.git
+    targetRevision: main
