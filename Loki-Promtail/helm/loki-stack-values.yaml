@@ -21,7 +21,7 @@ loki:
     uid: ""
   persistence:
     enabled: true
-    storageClassName: longhorn
+    storageClassName: nfs
     size: 10Gi
 
 promtail:
