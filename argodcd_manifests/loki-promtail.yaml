@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: default
+    namespace: observability
     server: https://kubernetes.default.svc
   project: default
   source:
