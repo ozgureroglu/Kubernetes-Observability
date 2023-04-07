@@ -12,13 +12,6 @@ spec:
     helm:
       valueFiles:
           - https://raw.githubusercontent.com/ozgureroglu/Kubernetes-Observability/main/Loki-Promtail/helm/loki-stack-values.yaml
-      # parameters:
-      #   - name: build.enabled
-      #     value: "false"
-      #   - name: deploy.route.enabled
-      #     value: "false"
-      #   - name: image.name
-      #     value: quay.io/redhatworkshops/gitops-helm-quarkus
     chart: loki-stack
     repoURL: https://grafana.github.io/helm-charts
     targetRevision: 2.9.10
