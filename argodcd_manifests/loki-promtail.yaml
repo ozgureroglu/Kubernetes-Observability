@@ -11,8 +11,7 @@ spec:
   source:
     helm:
       valueFiles:
-          - loki-stack-values.yaml
-          - https://github.com/ozgureroglu/Kubernetes-Observability/tree/main/Loki-Promtail/helm
+          - https://raw.githubusercontent.com/ozgureroglu/Kubernetes-Observability/main/Loki-Promtail/helm/loki-stack-values.yaml
       # parameters:
       #   - name: build.enabled
       #     value: "false"
