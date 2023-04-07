@@ -22,7 +22,7 @@ spec:
       #     value: quay.io/redhatworkshops/gitops-helm-quarkus
     chart: loki-stack
     repoURL: https://grafana.github.io/helm-charts
-    targetRevision: latest
+    targetRevision: 2.9.10
   syncPolicy:
     retry:
       backoff:
