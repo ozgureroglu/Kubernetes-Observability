@@ -3,6 +3,7 @@ test_pod:
   pullPolicy: IfNotPresent
 
 loki:
+  namespace: observability
   enabled: true
   isDefault: true
   url: http://{{(include "loki.serviceName" .)}}:{{ .Values.loki.service.port }}
