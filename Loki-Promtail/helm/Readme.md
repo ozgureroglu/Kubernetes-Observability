@@ -19,3 +19,10 @@ Sadece Loki ve Promtail  kurmak icin
 ```
 helm install loki grafana/loki-stack --namespace=observability
 ```
+
+
+Silmek icin 
+
+```
+helm uninstall loki  -n observability
+```

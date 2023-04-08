@@ -12,7 +12,7 @@ spec:
     helm:
       valueFiles:
       - https://raw.githubusercontent.com/ozgureroglu/Kubernetes-Observability/main/Loki-Promtail/helm/loki-stack-values.yaml
-    chart: loki-stack
+    chart: grafana/loki-stack
     repoURL: https://grafana.github.io/helm-charts
     targetRevision: 2.9.10
   syncPolicy:
