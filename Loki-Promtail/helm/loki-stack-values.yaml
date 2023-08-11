@@ -27,7 +27,7 @@ loki:
       annotations: {}
       enabled: true
       size: 10Gi
-      storageClassName: "default"
+      storageClassName: "nfs-client"
 
 
 promtail:
