@@ -21,14 +21,6 @@ loki:
     jsonData: "{}"
     uid: ""
   
-  persistence:
-    accessModes:
-    - ReadWriteOnce
-    annotations: {}
-    enabled: true
-    size: 10Gi
-    storageClassName: "nfs-client"
-
 
 promtail:
   enabled: true
