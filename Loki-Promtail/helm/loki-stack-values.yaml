@@ -22,7 +22,7 @@ loki:
     uid: ""
   persistence:
     enabled: true
-    storageClassName: nfs
+    # storageClassName: nfs
     size: 10Gi    
 
 
