@@ -21,8 +21,7 @@ loki:
     jsonData: "{}"
     uid: ""
   persistence:
-    enabled: true
-    # storageClassName: nfs
+    enabled: true    
     size: 10Gi    
 
 
