@@ -20,6 +20,14 @@ loki:
   datasource:
     jsonData: "{}"
     uid: ""
+  config:
+    persistence:
+      accessModes:
+      - ReadWriteOnce
+      annotations: {}
+      enabled: true
+      size: 10Gi
+      storageClassName: "default"
 
 
 promtail:
