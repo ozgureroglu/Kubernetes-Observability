@@ -1,8 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: alertmanager
-  namespace: observability-ns
+  name: kubestatemetrics
+  namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -15,6 +15,6 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: AlertManager/manifests
+    path: KubeStateMetrics/manifests
     repoURL: git@github.com:ozgureroglu/Kubernetes-Observability.git
     targetRevision: main
