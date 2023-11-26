@@ -6,7 +6,6 @@ metadata:
   labels:
     app: prometheus-deployment
 spec:
-  # storageClassName: nfs
   accessModes:
     - ReadWriteMany
   resources:

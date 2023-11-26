@@ -1,4 +1,4 @@
-Burada bir kubernetes kumesi icinde prometheus kurulumu icin gerekli dosyalar bulunmaktadir. 
+Burada bir kubernetes icinde prometheus kurulumu icin gerekli manifest dosyalari bulunmaktadir. 
 
 Kurulum sonrasinda calisan prometheus'un servis portlarindan port-forwarding ile durumu gorulebilir.
 
