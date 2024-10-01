@@ -6,4 +6,5 @@ Observability araclarinin kurulumlarini asagidaki sira ile yapmak daha sorunsuz.
 
 1. Prometheus
 2. Kube State Metrics
-3. 
+3. Garafana
+4. AlertManager
