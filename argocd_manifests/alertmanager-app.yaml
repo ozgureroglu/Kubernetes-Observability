@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: alertmanager
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  destination:
+    namespace: default
+    name: in-cluster
+  project: default
+  source:
+    path: AlertManager/manifests
+    repoURL: git@github.com:ozgureroglu/Kubernetes-Observability.git
+    targetRevision: main
